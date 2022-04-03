@@ -13,9 +13,10 @@ body {
 header {
     background-color: #0072CE;
     height: 80px;
-    padding-top: 10px;
     position: sticky; top: 0;
     padding-bottom: 20px;
+    /*Selleta kuvab tekst labi sticky menyy*/
+    z-index: 1;
 }
 
 .page-container {
@@ -23,8 +24,8 @@ header {
     width: 90%;
 }
 
-#logo {
-    height: 100%;
+.site-logo {
+    height: 125%;
     float: left;
     padding-left: 5%;
 }
@@ -88,15 +89,21 @@ nav a:nth-child(3):hover ~ .dot {
     opacity: 1;
 }
 
-.tutvustus {
-    height: 500px;
-    background-color: #fddb3a;
+.tutvustus-sisu {
+    text-align: center;
 }
 
-.tutvustus-sisu {
-    margin: auto;
-    text-align: center;
-    padding-top: 10%;
+.tutvustus-background {
+    height: 600px;
+    width: 100%;
+}
+
+.tutvustus-sisu-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
 }
 
 .blogi-parent, .blogi-post {
@@ -206,7 +213,7 @@ nav a:nth-child(3):hover ~ .dot {
   }
 
 footer {
-    margin: 20px;
+    padding: 60px 20px 60px 20px;
 }
 
 .footer-icon {
