@@ -12,9 +12,9 @@ body {
 
 header {
     background-color: #0072CE;
-    height: 80px;
+    height: 4rem;
     position: sticky; top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
     /*Selleta kuvab tekst labi sticky menyy*/
     z-index: 1;
 }
@@ -94,33 +94,33 @@ nav a:nth-child(3):hover ~ .dot {
 }
 
 .tutvustus-background {
-    height: 600px;
+    height: 50rem;
     width: 100%;
 }
 
 .tutvustus-sisu-text {
     position: absolute;
-    top: 50%;
+    top: 40rem;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: xx-large;
 }
 
-.blogi-parent, .blogi-post {
+.blogi-parent {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .blogi-parent > div {
-    margin: 20px;
+    margin: 1%;
 }
 
 .blogi-item {
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: #fddb3a;
-    height: 400px;
-    width: 20%;
+    height: 30rem;
+    width: 15%;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
@@ -133,8 +133,8 @@ nav a:nth-child(3):hover ~ .dot {
     transform: scale(1.2);
 }
 
-.blogi-pilt, .blogi-pilt-postis {
-    border-radius: 10px;
+.blogi-pilt {
+    border-radius: 1rem;
     width: 100%;
     height: 70%;
 }
@@ -142,15 +142,8 @@ nav a:nth-child(3):hover ~ .dot {
 .blogi-tekst {
     text-align: center;
     height: 25%;
-    margin: 8px;
+    margin: 0.5rem;
     overflow: hidden;
-}
-
-.blogi-tekst-postis {
-    flex: 1;
-    margin: 2px;
-    margin: 10px;
-    padding-top: 38px;
 }
 
 #top-btn {
@@ -196,9 +189,20 @@ nav a:nth-child(3):hover ~ .dot {
     background-color: #0072CE; /* Add a dark-grey background on hover */
 }
 
+.blogi-post {
+    display: flex;
+    padding-top: 1rem;
+}
+
 .blogi-pilt-postis {
-    height: 500px;
-    width: 450px;
+    height: 35rem;
+    width: 25%;
+    border-radius: 1rem;
+}
+
+.blogi-tekst-postis {
+    flex: 1;
+    margin: 2rem;
 }
 
 .arrow {
@@ -213,7 +217,7 @@ nav a:nth-child(3):hover ~ .dot {
   }
 
 footer {
-    padding: 60px 20px 60px 20px;
+    padding: 60px 5% 60px 5%;
 }
 
 .footer-icon {

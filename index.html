@@ -3,19 +3,22 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script defer src="index.js"></script> 
+        <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+        <script defer src="/index.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function(){
+                $("#header").load("/header.html");
+                $("#footer").load("/footer.html");
+            });
+        </script>
     </head>
 <body>
-    <header>
-        <img class="site-logo" src="images/sample-logo.png" alt="Veebilehe logo">
-        <nav>
-            <a href="#">Kodu</a>
-            <a href="#blogi-parent">Sisu</a>
-            <a href="#kontakt">Kontakt</a>
-            <div class="dot"></div>
-        </nav>
-    </header>
+    <div id="header"></div>
     <div class="page-container" id="page-container">
         <section class="tutvustus">
             <div class="tutvustus-sisu">
@@ -72,10 +75,7 @@
             </svg>
         </button> 
         <hr>
-        <footer id="kontakt">
-            Veebilehe autor: Kairo Luha
-            <a href="mailto:kairo9@tlu.ee"><img class="footer-icon" src="/images/email_icon.png" alt="E-maili ikoon"></a>
-        </footer>
     </div>
+    <div id="footer"></div>
 </body>
 </html> 
